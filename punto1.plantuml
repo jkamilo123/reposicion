@@ -1,0 +1,29 @@
+@startuml
+class Transporte {
+  +tipo: string
+  +marca: string
+  +modelo: string
+}
+
+class Autobus {
+  +tipo: string = "Autobús"
+}
+
+class Metro {
+  +tipo: string = "Metro"
+}
+
+class Bicicleta {
+  +tipo: string = "Bicicleta"
+}
+
+class Coche {
+  +tipo: string = "Coche"
+}
+
+Transporte <|-- Autobus
+Transporte <|-- Metro
+Transporte <|-- Bicicleta
+Transporte <|-- Coche
+
+@enduml
